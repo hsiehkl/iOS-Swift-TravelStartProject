@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="gTV-IL-0wX" customClass="PhotoCell" customModule="TravelStart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="151"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bhL-sZ-sdP">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="151"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bhL-sZ-sdP" secondAttribute="bottom" id="6rJ-Vi-Ufi"/>
+                <constraint firstItem="bhL-sZ-sdP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Prs-eb-Pyj"/>
+                <constraint firstItem="bhL-sZ-sdP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="apv-0y-SDz"/>
+                <constraint firstAttribute="trailing" secondItem="bhL-sZ-sdP" secondAttribute="trailing" id="btW-Uh-cJJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="175" height="151"/>
+            <connections>
+                <outlet property="photoImageView" destination="bhL-sZ-sdP" id="hlZ-vM-4z4"/>
+            </connections>
+            <point key="canvasLocation" x="87.5" y="1.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
