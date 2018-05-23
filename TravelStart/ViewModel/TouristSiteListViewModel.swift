@@ -113,5 +113,14 @@ class TouristSiteListViewModel {
                                             title: title,
                                             description: description)
     }
+    
+    func getCellViewModel(at indexPath: IndexPath ) -> TouristSiteListCellViewModel? {
+        if cellViewModels.count > indexPath.row {
+            return cellViewModels[indexPath.row]
+        } else {
+            return nil
+        }
+        
+    }
 }
 
