@@ -33,18 +33,10 @@
 		877287E820AD29A500F68366 /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877287E720AD29A500F68366 /* APIServiceTests.swift */; };
 		883414745D5C97DBA2E7EB7B /* Pods_TravelStartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFADE8981A62BEEE455F8C3E /* Pods_TravelStartTests.framework */; };
 		8B4ADEEC312C93490FC8613F /* Pods_TravelStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9136B7FEE9D053F17574770 /* Pods_TravelStart.framework */; };
-		ABA5B847C5B86E8C8FB090EA /* Pods_TravelStartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E94AF56B7726EDEE3131F7 /* Pods_TravelStartUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8744E00F20AA7859006F40A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8744DFF220AA7859006F40A5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8744DFF920AA7859006F40A5;
-			remoteInfo = TravelStart;
-		};
-		8744E01A20AA7859006F40A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8744DFF220AA7859006F40A5 /* Project object */;
 			proxyType = 1;
@@ -63,7 +55,6 @@
 		8744E00920AA7859006F40A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8744E00E20AA7859006F40A5 /* TravelStartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelStartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8744E01420AA7859006F40A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8744E01920AA7859006F40A5 /* TravelStartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelStartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8744E02B20AA7DBB006F40A5 /* UIColorExtenstions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtenstions.swift; sourceTree = "<group>"; };
 		8744E02D20AA7DCC006F40A5 /* TouristSites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TouristSites.storyboard; sourceTree = "<group>"; };
 		8744E02E20AA7DCC006F40A5 /* TouristSiteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouristSiteListViewController.swift; sourceTree = "<group>"; };
@@ -112,14 +103,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8744E01620AA7859006F40A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ABA5B847C5B86E8C8FB090EA /* Pods_TravelStartUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -149,7 +132,6 @@
 			children = (
 				8744DFFA20AA7859006F40A5 /* TravelStart.app */,
 				8744E00E20AA7859006F40A5 /* TravelStartTests.xctest */,
-				8744E01920AA7859006F40A5 /* TravelStartUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -316,27 +298,6 @@
 			productReference = 8744E00E20AA7859006F40A5 /* TravelStartTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8744E01820AA7859006F40A5 /* TravelStartUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8744E02820AA7859006F40A5 /* Build configuration list for PBXNativeTarget "TravelStartUITests" */;
-			buildPhases = (
-				B9562914D04A5C3B614DC25F /* [CP] Check Pods Manifest.lock */,
-				8744E01520AA7859006F40A5 /* Sources */,
-				8744E01620AA7859006F40A5 /* Frameworks */,
-				8744E01720AA7859006F40A5 /* Resources */,
-				D62B0B7401F52C97E1E81550 /* [CP] Embed Pods Frameworks */,
-				F0BD9A77C87532896CB88E7D /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8744E01B20AA7859006F40A5 /* PBXTargetDependency */,
-			);
-			name = TravelStartUITests;
-			productName = TravelStartUITests;
-			productReference = 8744E01920AA7859006F40A5 /* TravelStartUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -353,11 +314,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					8744E00D20AA7859006F40A5 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 8744DFF920AA7859006F40A5;
-					};
-					8744E01820AA7859006F40A5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8744DFF920AA7859006F40A5;
@@ -379,7 +335,6 @@
 			targets = (
 				8744DFF920AA7859006F40A5 /* TravelStart */,
 				8744E00D20AA7859006F40A5 /* TravelStartTests */,
-				8744E01820AA7859006F40A5 /* TravelStartUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -400,13 +355,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8744E00C20AA7859006F40A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8744E01720AA7859006F40A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -511,24 +459,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelStart/Pods-TravelStart-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9562914D04A5C3B614DC25F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TravelStartUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C1F0037647CFE06B9F461052 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,41 +472,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelStartTests/Pods-TravelStartTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D62B0B7401F52C97E1E81550 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TravelStartUITests/Pods-TravelStartUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelStartUITests/Pods-TravelStartUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0BD9A77C87532896CB88E7D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelStartUITests/Pods-TravelStartUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -613,13 +508,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8744E01520AA7859006F40A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -627,11 +515,6 @@
 			isa = PBXTargetDependency;
 			target = 8744DFF920AA7859006F40A5 /* TravelStart */;
 			targetProxy = 8744E00F20AA7859006F40A5 /* PBXContainerItemProxy */;
-		};
-		8744E01B20AA7859006F40A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8744DFF920AA7859006F40A5 /* TravelStart */;
-			targetProxy = 8744E01A20AA7859006F40A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -829,40 +712,6 @@
 			};
 			name = Release;
 		};
-		8744E02920AA7859006F40A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2B97A90D6931175854826A0 /* Pods-TravelStartUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DTTYHBEAZE;
-				INFOPLIST_FILE = TravelStartUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsiaoAi.TravelStartUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TravelStart;
-			};
-			name = Debug;
-		};
-		8744E02A20AA7859006F40A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37318DD882586BE88C2469F3 /* Pods-TravelStartUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DTTYHBEAZE;
-				INFOPLIST_FILE = TravelStartUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsiaoAi.TravelStartUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TravelStart;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -889,15 +738,6 @@
 			buildConfigurations = (
 				8744E02620AA7859006F40A5 /* Debug */,
 				8744E02720AA7859006F40A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8744E02820AA7859006F40A5 /* Build configuration list for PBXNativeTarget "TravelStartUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8744E02920AA7859006F40A5 /* Debug */,
-				8744E02A20AA7859006F40A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
