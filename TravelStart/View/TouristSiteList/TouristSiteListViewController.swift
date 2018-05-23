@@ -188,13 +188,12 @@ extension TouristSiteListViewController: UITableViewDelegate, UITableViewDataSou
         
         guard let loadingCell = tableView.dequeueReusableCell(withIdentifier: "LoadingCell") as? LoadingCell else { return UITableViewCell() }
         
-        if self.viewModel.cellViewModels.count > indexPath.row {
-            let cellViewModel = viewModel.cellViewModels[indexPath.row]
-            cell.configureCell(with: cellViewModel, touristSiteListViewController: self)
+        if let viewModelCell = viewModel.getCellViewModel(at: indexPath) {
+            cell.configureCell(with: viewModelCell, touristSiteListViewController: self)
             return cell
         } else {
             return loadingCell
-        }        
+        }
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
