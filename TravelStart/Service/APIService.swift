@@ -65,5 +65,28 @@ extension APIService {
             completion(true, jsonData.result.results, nil, Int(totalPages))
         }
     }
+    
+    func mockFetchTouristSitesTimeOut(limit: Int?, offset: Int?, completion: @escaping FetchTouristSitesResult) {
+        let limitData = limit ?? 0
+        let offsetData = offset ?? 0
+        let imcompletedUrl = String(
+            format:"http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid", limitData, offsetData)
+        
+        Alamofire.request(imcompletedUrl, method: .get, parameters: [:]).responseJSON { response in
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            
+            guard response.error == nil,
+                let json = response.data,
+                let jsonData = try? decoder.decode(TouristSiteJSONData.self, from: json)
+                else {
+                    completion(false, nil, response.error, nil)
+                    return
+            }
+            let totalPages = (limitData == 0) ? 0 : ceil(Double(jsonData.result.count) / Double(limitData))
+            completion(true, jsonData.result.results, nil, Int(totalPages))
+        }
+        sleep(50)
+    }
 
 }

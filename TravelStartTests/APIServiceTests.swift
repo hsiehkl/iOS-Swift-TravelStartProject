@@ -52,4 +52,14 @@ class APIServiceTests: XCTestCase {
         }
     }
     
+    func testMockFetchTouristSitesTimeout() {
+        self.apiService.mockFetchTouristSitesTimeOut(limit: 10 , offset: 0){ (success, touristSties, error, totalPages) in
+            XCTAssertEqual(success, true)
+            XCTAssertTrue(error == nil)
+            XCTAssertTrue(touristSties != nil)
+            XCTAssertTrue(totalPages != nil)
+        }        
+    }
+    
+    
 }
