@@ -20,8 +20,12 @@ class APIServiceTests: XCTestCase {
     }
     
     override func tearDown() {
-        super.tearDown()
         self.apiService = nil
+        super.tearDown()
+    }
+    
+    func testAPIServiceIsNotNill() {
+        XCTAssertNotNil(self.apiService, "apiService is Nill")
     }
     
     func testmockFetchTouristSitesWithWrongUrl() {
