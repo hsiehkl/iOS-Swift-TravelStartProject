@@ -60,8 +60,8 @@ extension TouristSiteCell: UICollectionViewDelegateFlowLayout, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height = collectionView.bounds.height
-        let width = height * 4 / 3
+        let width = collectionView.bounds.width / 2
+        var height = collectionView.bounds.height
         return CGSize(width: width, height: height)
     }
     

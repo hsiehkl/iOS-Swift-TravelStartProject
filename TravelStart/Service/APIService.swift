@@ -24,6 +24,7 @@ class APIService: APIServiceProtocol {
         let url = String(
             format:"http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=36847f3f-deff-4183-a5bb-800737591de5&limit=%d&offset=%d", limitData, offsetData)
         
+        
         Alamofire.request(url, method: .get, parameters: [:]).responseJSON { response in
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
