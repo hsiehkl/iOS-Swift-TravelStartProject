@@ -44,7 +44,6 @@ extension AppDelegate {
             [NSAttributedStringKey.foregroundColor: UIColor.white]
         navigationBarAppearace.barStyle = .black
         UIApplication.shared.statusBarStyle = .lightContent
-
     }
     
     func setupThirdPartySettings() {
