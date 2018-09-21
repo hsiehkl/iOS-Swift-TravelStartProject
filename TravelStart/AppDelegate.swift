@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupRootViewController()
         setupNaviTheme()
         setupThirdPartySettings()
-    
+
         return true
     }
 }
