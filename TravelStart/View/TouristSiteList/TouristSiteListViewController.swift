@@ -195,7 +195,7 @@ extension TouristSiteListViewController: UITableViewDelegate, UITableViewDataSou
             return loadingCell
         }
     }
-    
+
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         for cell in tableView.visibleCells {
             if cell.reuseIdentifier == "LoadingCell",
